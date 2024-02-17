@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PET Adoption Company</title>
+    <!-- Add your CSS stylesheets or link to them here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Pet Adoption Company</h1>
+        <!-- Add a banner section for featured pets -->
+        <div class="banner">
+            <!-- Banner content goes here -->
+        </div>
+    </header>
+    <main>
+        <section id="notAdopted">
+            <h2>Not Adopted Pets</h2>
+            <!-- Display list of not adopted pets -->
+            <ul>
+                <!-- List items for not adopted pets will be dynamically added here -->
+            </ul>
+        </section>
+        <section id="adopted">
+            <h2>Adopted Pets (Previous Date)</h2>
+            <!-- Display list of adopted pets from the previous date -->
+            <ul>
+                <!-- List items for adopted pets will be dynamically added here -->
+            </ul>
+        </section>
+
+        <!-- Form for adding new pets -->
+        <h2>Add New Pet</h2>
+        <form id="addPetForm">
+            <label for="petName">Name:</label>
+            <input type="text" id="petName" name="petName" required>
+            
+            <label for="petType">Type:</label>
+            <input type="text" id="petType" name="petType" required>
+            
+            <label for="petAge">Age:</label>
+            <input type="number" id="petAge" name="petAge" required>
+            
+            <button type="submit">Add Pet</button>
+        </form>
+
+        <!-- Form for updating pet profiles -->
+        <h2>Update Pet Profile</h2>
+        <form id="updatePetForm">
+            <label for="petIndex">Pet Index:</label>
+            <input type="number" id="petIndex" name="petIndex" required>
+            
+            <label for="petStatus">New Status:</label>
+            <input type="text" id="petStatus" name="petStatus" required>
+            
+            <button type="submit">Update Pet</button>
+        </form>
+
+        <!-- Form for deleting adopted pets -->
+        <h2>Delete Adopted Pet</h2>
+        <form id="deletePetForm">
+            <label for="adoptedPetIndex">Pet Index:</label>
+            <input type="number" id="adoptedPetIndex" name="adoptedPetIndex" required>
+            
+            <button type="submit">Delete Pet</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pet Adoption Company</p>
+    </footer>
+    <!-- Link to external JavaScript file -->
+    <script src="scripts.js"></script>
+</body>
+</html>
